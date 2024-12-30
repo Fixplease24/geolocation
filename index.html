@@ -1360,10 +1360,6 @@
       <h2>
         Change log
       </h2>
-      <p>
-        Since First Public Working Draft in 2021, <cite>Geolocation</cite> has
-        received the following normative changes:
-      </p>
       <script class="removeOnSave">
         function removeCommits(commit) {
           const { message, hash } = commit;
@@ -1372,7 +1368,17 @@
           }
           return !/^Clarify which FPWD|^Merge pull|^tidy|^editorial|^Editiorial|^edtiorial|^chore|^refactor|^tests?|^docs|^typo|^nit/i.test(message);
         }
-      </script> <rs-changelog from="FPWD" filter=
+      </script>
+      <p>
+        Since the previous publication of this specification as a Recommendation
+        in 2022, the following changes have been made:
+      </p>
+      <rs-changelog from="REC-2022" filter="updateableRecFilter"></rs-changelog>
+      <p>
+        Since First Public Working Draft in 2021, <cite>Geolocation</cite> has
+        received the following normative changes:
+      </p>
+      <rs-changelog from="FPWD" to="REC-2022" filter=
       "removeCommits"></rs-changelog>
       <p>
         Since publication of the Second Edition in 2016, this specification
